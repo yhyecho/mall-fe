@@ -2,7 +2,7 @@
  * @Author: Echo
  * @Date:   2017-06-26T17:16:32+08:00
  * @Last modified by:   Echo
- * @Last modified time: 2017-06-27T17:42:32+08:00
+ * @Last modified time: 2017-06-28T10:52:08+08:00
  */
 
 var webpack = require('webpack')
@@ -42,6 +42,14 @@ var config = {
       { test: /\.css$/, loader: ExtractTextPlugin.extract("style-loader", "css-loader") },
       { test: /\.(gif|jpg|png|woff|svg|eot|ttf)\??.*$/, loader: 'url-loader?limit=20000&name=resource/[name].[ext]' }
     ]
+  },
+  resolve: {
+    alias: {
+      util    : __dirname + '/src/util',
+      page    : __dirname + '/src/page',
+      service : __dirname + '/src/service',
+      image   : __dirname + '/src/image'
+    }
   },
   plugins: [
     // 独立通用模块到js/base.js
