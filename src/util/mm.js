@@ -2,7 +2,7 @@
  * @Author: Echo
  * @Date:   2017-06-28T10:31:08+08:00
  * @Last modified by:   Echo
- * @Last modified time: 2017-06-28T15:06:13+08:00
+ * @Last modified time: 2017-07-03T20:12:50+08:00
  */
 
 var Hogan = require('hogan.js')
@@ -47,7 +47,6 @@ var _mm = {
     var reg         = new RegExp("(^|&)" + name + "=([^&]*)(&|$)"),
         queryString = window.location.href.split('?')[1] || '',
         result      = queryString.match(reg);
-        console.log(window.location);
     return result ? decodeURIComponent(result[2]) : null
   },
   // 渲染html模版
