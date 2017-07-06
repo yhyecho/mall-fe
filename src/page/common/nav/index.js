@@ -2,7 +2,7 @@
  * @Author: Echo
  * @Date:   2017-06-30T11:30:05+08:00
  * @Last modified by:   Echo
- * @Last modified time: 2017-07-03T15:48:39+08:00
+ * @Last modified time: 2017-07-06T16:23:22+08:00
  */
 
 
@@ -27,7 +27,7 @@ var nav = {
     })
     // 注册点击事件
     $('.js-register').click(function() {
-      window.loaction.href = './register.html'
+      window.location.href = './user-register.html'
     })
     // 退出点击事件
     $('.js-logout').click(function() {

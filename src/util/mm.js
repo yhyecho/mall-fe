@@ -2,7 +2,7 @@
  * @Author: Echo
  * @Date:   2017-06-28T10:31:08+08:00
  * @Last modified by:   Echo
- * @Last modified time: 2017-07-03T20:12:50+08:00
+ * @Last modified time: 2017-07-06T16:20:54+08:00
  */
 
 var Hogan = require('hogan.js')
@@ -81,7 +81,7 @@ var _mm = {
   },
   // 统一登录处理
   doLogin: function() {
-    window.location.href = '#/login?redirect=' + encodeURIComponent(window.location.href) // 处理url中的特殊字符
+    window.location.href = './user-login.html?redirect=' + encodeURIComponent(window.location.href) // 处理url中的特殊字符
   }
 }
 
