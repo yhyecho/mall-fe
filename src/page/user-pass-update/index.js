@@ -2,7 +2,7 @@
  * @Author: Echo
  * @Date:   2017-07-10T17:36:35+08:00
  * @Last modified by:   Echo
- * @Last modified time: 2017-07-10T18:05:43+08:00
+ * @Last modified time: 2017-07-10T19:05:45+08:00
  */
 
  require('./index.css')
@@ -47,7 +47,7 @@
   onLoad: function() {
     // 初始化左侧菜单
     navSide.init({
-      name: 'user-center'
+      name: 'user-pass-update'
     })
   },
   formValidate: function(formData) {

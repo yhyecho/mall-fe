@@ -2,7 +2,7 @@
  * @Author: Echo
  * @Date:   2017-07-03T17:15:04+08:00
  * @Last modified by:   Echo
- * @Last modified time: 2017-07-10T17:49:02+08:00
+ * @Last modified time: 2017-07-10T19:06:11+08:00
  */
 
 
@@ -17,7 +17,7 @@ var navSide = {
     navList: [
       {name : 'user-center', desc: '个人中心', href: './user-center.html'},
       {name : 'order-list', desc: '我的订单', href: './order-list.html'},
-      {name : 'pass-update', desc: '修改密码', href: './user-pass-update.html'},
+      {name : 'user-pass-update', desc: '修改密码', href: './user-pass-update.html'},
       {name : 'about', desc: '关于MMall', href: './about.html'},
     ]
   },
