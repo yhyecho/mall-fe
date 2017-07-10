@@ -2,7 +2,7 @@
  * @Author: Echo
  * @Date:   2017-06-30T10:20:41+08:00
  * @Last modified by:   Echo
- * @Last modified time: 2017-06-30T10:56:50+08:00
+ * @Last modified time: 2017-07-10T16:29:19+08:00
  */
 
 /* css reset */
@@ -46,6 +46,24 @@ input[type='checkout'] {
   width: 1600px;
 }
 */
+
+/* panel */
+.panel {
+  padding: 10px;
+  margin-bottom: 10px;
+  background: #fff;
+}
+.panel .panel-title {
+  padding: 10px;
+  font-size: 14px;
+  color: #666;
+  font-weight: bold;
+  border-bottom: 1px solid #eee;
+}
+.panel .panel-body {
+  padding: 10px;
+  overflow: hidden;
+}
 
 /* 全局通用样式 */
 /* 隐藏类 */

@@ -2,7 +2,7 @@
  * @Author: Echo
  * @Date:   2017-06-26T17:16:32+08:00
  * @Last modified by:   Echo
- * @Last modified time: 2017-07-06T16:54:47+08:00
+ * @Last modified time: 2017-07-10T17:39:01+08:00
  */
 
 var webpack = require('webpack')
@@ -31,6 +31,9 @@ var config = {
     'user-login': ['./src/page/user-login/index.js'],
     'user-register': ['./src/page/user-register/index.js'],
     'user-pass-reset': ['./src/page/user-pass-reset/index.js'],
+    'user-center': ['./src/page/user-center/index.js'],
+    'user-center-update': ['./src/page/user-center-update/index.js'],
+    'user-pass-update': ['./src/page/user-pass-update/index.js'],
     'result': ['./src/page/result/index.js']
   },
   output: {
@@ -70,7 +73,10 @@ var config = {
     new HtmlWebpackPlugin(getHtmlConfig('user-login', '用户登陆')),
     new HtmlWebpackPlugin(getHtmlConfig('user-register', '用户注册')),
     new HtmlWebpackPlugin(getHtmlConfig('user-pass-reset', '用户密码找回')),
-    new HtmlWebpackPlugin(getHtmlConfig('result', '操作结果'))
+    new HtmlWebpackPlugin(getHtmlConfig('result', '操作结果')),
+    new HtmlWebpackPlugin(getHtmlConfig('user-center', '个人中心')),
+    new HtmlWebpackPlugin(getHtmlConfig('user-center-update', '修改用户信息')),
+    new HtmlWebpackPlugin(getHtmlConfig('user-pass-update', '修改密码'))
   ]
 }
 

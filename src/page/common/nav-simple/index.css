@@ -2,7 +2,7 @@
  * @Author: Echo
  * @Date:   2017-06-30T11:10:02+08:00
  * @Last modified by:   Echo
- * @Last modified time: 2017-06-30T11:16:57+08:00
+ * @Last modified time: 2017-07-10T15:33:23+08:00
  */
 
 .nav-simple {
@@ -15,4 +15,5 @@
   font-size: 26px;
   font-weight: bold;
   color: #c60023;
+  text-decoration: none;
 }

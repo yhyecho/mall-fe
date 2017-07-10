@@ -2,7 +2,7 @@
  * @Author: Echo
  * @Date:   2017-07-03T16:25:16+08:00
  * @Last modified by:   Echo
- * @Last modified time: 2017-07-03T16:52:16+08:00
+ * @Last modified time: 2017-07-10T16:17:47+08:00
  */
 /* 通用头部导航 */
 .header .logo {
@@ -13,6 +13,7 @@
   font-size: 36px;
   color: #c60023;
   font-weight: bold;
+  text-decoration: none;
 }
 
 .header .search-con {
@@ -33,4 +34,13 @@
   position: absolute;
   height: 44px;
   width: 80px;
+}
+/* 面包屑导航 */
+.crumb {
+  height: 50px;
+  line-height: 50px;
+  background: #eee;
+  color: #888;
+  font-size: 14px;
+  border-top: 2px solid #c60023;
 }

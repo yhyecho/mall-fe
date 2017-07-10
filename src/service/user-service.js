@@ -2,7 +2,7 @@
  * @Author: Echo
  * @Date:   2017-07-03T15:28:20+08:00
  * @Last modified by:   Echo
- * @Last modified time: 2017-07-06T17:45:38+08:00
+ * @Last modified time: 2017-07-10T18:03:44+08:00
  */
 var _mm = require('util/mm.js')
 var _user = {
@@ -10,6 +10,34 @@ var _user = {
   login: function(userInfo, resolve, reject) {
     _mm.request({
       url     : _mm.getServerUrl('/user/login.do'),
+      data    : userInfo,
+      method  : 'POST',
+      success : resolve,
+      error   : reject
+    })
+  },
+  // 获取用户信息
+  getUserInfo: function(resolve, reject) {
+    _mm.request({
+      url     : _mm.getServerUrl('/user/get_information.do'),
+      method  : 'POST',
+      success : resolve,
+      error   : reject
+    })
+  },
+  updateUserInfo: function(userInfo, resolve, reject) {
+    _mm.request({
+      url     : _mm.getServerUrl('/user/update_information.do'),
+      data    : userInfo,
+      method  : 'POST',
+      success : resolve,
+      error   : reject
+    })
+  },
+  // 登录状态下的更新用户密码
+  updatePassword: function(userInfo, resolve, reject) {
+    _mm.request({
+      url     : _mm.getServerUrl('/user/reset_password.do'),
       data    : userInfo,
       method  : 'POST',
       success : resolve,
