@@ -2,7 +2,7 @@
  * @Author: Echo
  * @Date:   2017-07-03T16:25:10+08:00
  * @Last modified by:   Echo
- * @Last modified time: 2017-07-03T16:51:52+08:00
+ * @Last modified time: 2017-07-11T10:49:38+08:00
  */
 
 require('./index.css')
@@ -10,6 +10,7 @@ var _mm = require('util/mm.js')
 // 通用页面头部
 var header = {
   init: function() {
+    this.onLoad()
     this.bindEvent()
   },
   onLoad: function() {

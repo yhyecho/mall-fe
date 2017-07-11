@@ -2,7 +2,7 @@
  * @Author: Echo
  * @Date:   2017-07-03T15:48:53+08:00
  * @Last modified by:   Echo
- * @Last modified time: 2017-07-03T15:56:49+08:00
+ * @Last modified time: 2017-07-11T23:00:21+08:00
  */
 
 var _mm = require('util/mm.js')
@@ -12,6 +12,15 @@ var _cart = {
   getCartCount: function(resolve, reject) {
     _mm.request({
       url     : _mm.getServerUrl('/cart/get_cart_product_count.do'),
+      success : resolve,
+      error   : reject
+    })
+  },
+  // 添加到购物车
+  addToCart: function(productInfo, resolve, reject) {
+    _mm.request({
+      url     : _mm.getServerUrl('/cart/add.do'),
+      data    : productInfo,
       success : resolve,
       error   : reject
     })

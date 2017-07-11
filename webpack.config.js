@@ -2,7 +2,7 @@
  * @Author: Echo
  * @Date:   2017-06-26T17:16:32+08:00
  * @Last modified by:   Echo
- * @Last modified time: 2017-07-10T17:39:01+08:00
+ * @Last modified time: 2017-07-11T20:41:25+08:00
  */
 
 var webpack = require('webpack')
@@ -28,6 +28,8 @@ var config = {
   entry: {
     'common': ['./src/page/common/index.js'],
     'index': ['./src/page/index/index.js'],
+    'list': ['./src/page/list/index.js'],
+    'detail': ['./src/page/detail/index.js'],
     'user-login': ['./src/page/user-login/index.js'],
     'user-register': ['./src/page/user-register/index.js'],
     'user-pass-reset': ['./src/page/user-pass-reset/index.js'],
@@ -70,6 +72,8 @@ var config = {
     new ExtractTextPlugin('css/[name].css'),
     // html模版的处理
     new HtmlWebpackPlugin(getHtmlConfig('index', '首页')),
+    new HtmlWebpackPlugin(getHtmlConfig('list', '商品列表页')),
+    new HtmlWebpackPlugin(getHtmlConfig('detail', '商品详情页')),
     new HtmlWebpackPlugin(getHtmlConfig('user-login', '用户登陆')),
     new HtmlWebpackPlugin(getHtmlConfig('user-register', '用户注册')),
     new HtmlWebpackPlugin(getHtmlConfig('user-pass-reset', '用户密码找回')),
